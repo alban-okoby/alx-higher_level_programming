@@ -10,3 +10,5 @@ elif (last_digit == 0):
     oderRange = "0"
 else:
     oderRange = "less than 6 and not 0"
+
+print (f"Last digit of {number} is {last_digit} and is {oderRange}")

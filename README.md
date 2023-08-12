@@ -13,26 +13,14 @@
 - What are indexing and slicing in Python
 - What is the official Python coding style and how to check your code with pycodestyle
 
-### Task 0
+### [0x00-python-hello-world](https://github.com/alban-okoby/alx-higher_level_programming/tree/master/0x00-python-hello_world)
+ 
 Write a Shell script that runs a Python script. <br>
 The Python file name will be saved in the environment variable $PYFILE
 
-### Task 01
-Write a Shell script that runs Python code. <br>
-The Python code will be saved in the environment variable $PYCODE
+### [0x01-python-if_else_loops_functions](https://github.com/alban-okoby/alx-higher_level_programming/tree/master/0x01-python-if_else_loops_functions)
 
-### Task 02
-Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
-<br>
-Use the function print
+### [0x02xpython-import_modules](https://github.com/alban-okoby/alx-higher_level_programming/tree/master/0x02-python-import_modules)
 
-### Task 03
-Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
-<br>
-- You can find the source code here
-- The output of the script should be:
-   - the number, followed by Battery street,
-   - followed by a new line
-- You are not allowed to cast the variable number into a string
-- Your code must be 3 lines long
-- You have to use f-strings <i style="color:red">tips</i>
+### [0x03. Python - Data Structures: Lists, Tuples](https://github.com/alban-okoby/alx-higher_level_programming/tree/master/0x03-python-data_structures)
+ 

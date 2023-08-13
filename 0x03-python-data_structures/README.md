@@ -1,7 +1,9 @@
 
 # 0x03-python-data_structures
 <img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/01/python-data-structures.jpg" alt="python data structures -> img src from techvidvan.com" />
+
 ## General Objectives
+
 - Why Python programming is awesome 
 - What are lists and how to use them
 - What are the differences and similarities between strings and lists

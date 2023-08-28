@@ -2,6 +2,6 @@
 
 def raise_exception():
     try:
-        raise TypeError("Exception raised")
+        raise TypeError("A custom type exception")
     except TypeError as error:
-        print(error)
+        print("Exception raised: ", error)

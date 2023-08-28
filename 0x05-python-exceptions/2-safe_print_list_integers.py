@@ -2,12 +2,18 @@
 
 def safe_print_list_integers(my_list=[], x=0):
     printed_elts = 0
-    for v in range(0, x):
-        try:
-            int_value = my_list[i]
-            print("{:d}".format(int_value), end="")
-            printed_elts += 1
-        except (ValueError, TypeError):
-            continue
+
+    try:
+        for v in my_list:
+            try:
+                int_value = int(v)
+                print("{:d}".format(int_value), end="")
+                printed_elts += 1
+                if printed_elts >= x:
+                    break
+            except ValueError:
+                continue
+    except TypeError:
+        pass
     print()
     return (printed_elts)

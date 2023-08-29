@@ -3,4 +3,9 @@
 """Defines the blueprint of a square"""
 
 class Square:
-    """Defines the square class"""
+    """
+        This is the Square class.
+    
+    Attributes:
+        No attributes are defined for this class.
+    """

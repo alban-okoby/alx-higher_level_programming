@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 
-"""Defines the blueprint of a square"""
+"""Defines the square class"""
+
 
 class Square:
     """
-        This is the Square class.
-    
-    Attributes:
-        No attributes are defined for this class.
+        An empty class
     """
     pass

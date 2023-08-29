@@ -9,3 +9,4 @@ class Square:
     Attributes:
         No attributes are defined for this class.
     """
+    pass

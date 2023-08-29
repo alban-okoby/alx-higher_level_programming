@@ -3,6 +3,4 @@
 """Defines the blueprint of a square"""
 
 class Square:
-    """Defines the blueprint of a square"""
-
-    pass
+    """Defines the square class"""

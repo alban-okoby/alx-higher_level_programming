@@ -40,7 +40,7 @@ class SinglyLinkedList:
         self.head = None
 
     def sorted_insert(self, value):
-        """Insert a new Node into the sorted position in the list (increasing order)"""
+        """Insert a new Node into the sorted position in the list"""
         new_node = Node(value)
         if self.head is None or self.head.data >= value:
             new_node.next_node = self.head

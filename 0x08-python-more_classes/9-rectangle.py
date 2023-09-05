@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 
+""" Class Rectangle"""
+
+
+
 class Rectangle:
-    """class defining a rectangle by its width and height"""
+    """cass defining a rectangle by its width and height"""
     number_of_instances = 0
     print_symbol = '#'
 
@@ -55,10 +59,7 @@ class Rectangle:
         """Generate a string representation of the rectangle"""
         if self.__width == 0 or self.__height == 0:
             return ""
-        symbol_line = str(self.print_symbol) * self.__width
-        rows = [symbol_line for _ in range(self.__height)]
-        result = "\n".join(rows)
-        return (result)
+        return "\n".join([str(self.print_symbol) * self.__width for _ in range(self.__height)])
 
     def __repr__(self):
         """Generate a string representation for recreating the rectangle"""

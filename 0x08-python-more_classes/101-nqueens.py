@@ -4,6 +4,7 @@
 
 import sys
 
+
 def is_safe(board, row, col, n):
     """ Check if there is a queen in the same column"""
     for i in range(row):
@@ -22,6 +23,7 @@ def is_safe(board, row, col, n):
 
     return True
 
+
 def solve_nqueens(n):
     """solve nqueens"""
     if n < 4:
@@ -30,7 +32,9 @@ def solve_nqueens(n):
     def solve(board, row):
         """solve"""
         if row == n:
-            solutions.append([[r, c] for r, row in enumerate(board) for c, val in enumerate(row) if val == 1])
+            solutions.append(
+                    [[r, c] for r, row in enumerate(board)
+                        for c, val in enumerate(row) if val == 1])
             return
 
         for col in range(n):
@@ -38,10 +42,10 @@ def solve_nqueens(n):
                 board[row][col] = 1
                 solve(board, row + 1)
                 board[row][col] = 0
-
     solutions = []
     solve([[0] * n for _ in range(n)], 0)
     return solutions
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

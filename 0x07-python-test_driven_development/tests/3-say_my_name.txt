@@ -1,0 +1,26 @@
+# Test 1: Valid inputs with both first_name and last_name
+say_my_name("John", "Smith")
+# Expected output: My name is John Smith
+
+# Test 2: Valid input with only first_name
+say_my_name("Walter")
+# Expected output: My name is Walter
+
+# Test 3: Invalid input with a number for first_name
+try:
+    say_my_name(12, "White")
+except Exception as e:
+    # Expected output: Error message - first_name must be a string or last_name must be a string
+    print(e)
+
+# Test 4: Invalid input with a number for last_name
+try:
+    say_my_name("Bob", 123)
+except Exception as e:
+    # Expected output: Error message - first_name must be a string or last_name must be a string
+    print(e)
+
+# Test 5: Valid input with an empty last_name
+say_my_name("Alice", "")
+# Expected output: My name is Alice
+

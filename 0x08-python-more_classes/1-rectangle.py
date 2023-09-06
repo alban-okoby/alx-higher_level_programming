@@ -1,11 +1,11 @@
 #!/usr/bin/pyhon3
-
 """Define a rectangle class """
 
 
 class Rectangle:
     """Rectangle class defines a rectangle with width and height"""
     def __init__(self, width=0, height=0):
+        """Init a rectangle"""
         self.__width = width
         self.__height = height
 
@@ -36,5 +36,4 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
-        else:
-            self.__height = value
+        self.__height = value

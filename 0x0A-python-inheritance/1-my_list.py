@@ -10,4 +10,5 @@ class MyList(list):
 
     def print_sorted(self):
         """print a sorted of list(ascending order)"""
-        print(sorted(self))
+        ascended_list = sorted(self)
+        print(ascended_list)

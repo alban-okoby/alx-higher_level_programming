@@ -7,4 +7,4 @@ class BaseGeometry:
 
     def area(self):
         """Not yet implemented"""
-        rase Excepetion("area() is not implemented")
+        raise Excepetion("area() is not implemented")

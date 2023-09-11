@@ -37,10 +37,9 @@
 - All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
 - A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 - We strongly encourage you to work together on test cases, so that you don’t miss any edge case.
-- Have happy coding 🎉 <br>
 
 ## Documentation
 - Do not use the words import or from inside your comments, the checker will think you try to import some modules
 
-
+<br> Have happy coding � <br>
 Alban 🐱‍👤

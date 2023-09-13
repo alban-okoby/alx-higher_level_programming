@@ -14,4 +14,3 @@ def from_json_string(my_str):
         object: The Python object repr by the JSON strg.
     """
     return json.loads(my_str)
-

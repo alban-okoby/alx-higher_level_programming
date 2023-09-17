@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define a Rectangle that inherite Base class"""
+"""Defines a rectangle class."""
 
 
 from models.base import Base
@@ -99,15 +99,42 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """Print the rectangle using '#' characters with x and y offset"""
-        for _ in range(self.__height):
+        """Print the rectangle using '#' characters with x and y offset."""
+        for _ in range(self.__y):
             print()
         for _ in range(self.__height):
-            print('' * self.__x + '#' * self.__width)
+            print(' ' * self.__x + '#' * self.__width)
 
     def __str__(self):
         """Return a string representation of the Rectangle."""
         return (
-                f"[Rectangle] ({self.id}) "
-                f"{self.x}/{self.y} - {self.width}/{self.height}"
-                )
+            f"[Rectangle] ({self.id}) "
+            f"{self.x}/{self.y} - {self.width}/{self.height}"
+        )
+
+    def update(self, *args):
+        """
+        Assign arguments to attributes in the specified order.
+
+        Args:
+            *args: Arguments to assign to attributes in order:
+                1st argument: id attribute
+                2nd argument: width attribute
+                3rd argument: height attribute
+                4th argument: x attribute
+                5th argument: y attribute
+
+        Returns:
+            None
+        """
+        if args:
+            if len(args) >= 1:
+                self.id = args[0]
+            if len(args) >= 2:
+                self.width = args[1]
+            if len(args) >= 3:
+                self.height = args[2]
+            if len(args) >= 4:
+                self.x = args[3]
+            if len(args) >= 5:
+                self.y = args[4]

@@ -2,6 +2,9 @@
 """Define a Base class"""
 
 import csv
+import turtle
+import json
+
 
 class Base:
     """

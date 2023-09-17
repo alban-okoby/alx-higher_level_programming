@@ -18,16 +18,16 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Initializes a new instance of the Rectangle class.
+        Initializes a new instance of the Rectangle class
 
         Args:
             width (int): The width of the rectangle.
             height (int): The height of the rectangle.
             x (int, optional): The horizontal position of the
-            rectangle (default is 0).
+            rectangle (default is 0)
             y (int, optional): The vertical position of the
-            rectangle (default is 0).
-            id (int, optional): An optional integer ID (default is None).
+            rectangle (default is 0)
+            id (int, optional): An optional integer ID (default is None)
 
         Returns:
             None
@@ -93,3 +93,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """Calculate and return the area of the rectangle."""
+        return self.__width * self.__height

@@ -1,6 +1,7 @@
 # 0x0C. Python - Almost a circle
-<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/331/giphy.mp4" alt="Alx Python Circle" />
-
+<video>
+<source src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/331/giphy.mp4" type="video/mp4" />
+</video>
 ## Background context
 <p>The AirBnB project is a big part of the Higher level curriculum. This project will help you be ready for it.
 <br>

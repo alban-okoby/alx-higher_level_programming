@@ -170,3 +170,57 @@ class Base:
                 return instances
         except FileNotFoundError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """
+        Draw rectangles and squares using Turtle graphics.
+
+        Args:
+            list_rectangles (list of Rectangle instances): A list
+            of Rectangle objects
+            list_squares (list of Square instances): A list of Square objects
+
+        Returns:
+            None
+        """
+        # Initialize the Turtle graphics screen
+        turtle.Screen()
+        turtle.title("Draw Rectangles and Squares")
+
+        # Create a Turtle object for drawing
+        pen = turtle.Turtle()
+        pen.speed(1)  # Set the drawing speed (adjust as needed)
+
+        # Draw rectangles
+        for rectangle in list_rectangles:
+            pen.penup()
+            pen.goto(rectangle.x, rectangle.y)
+            pen.pendown()
+            pen.color("blue")  # You can change the color
+            pen.begin_fill()
+
+            for _ in range(2):
+                pen.forward(rectangle.width)
+                pen.left(90)
+                pen.forward(rectangle.height)
+                pen.left(90)
+
+            pen.end_fill()
+
+        # Draw squares
+        for square in list_squares:
+            pen.penup()
+            pen.goto(square.x, square.y)
+            pen.pendown()
+            pen.color("green")  # You can change the color
+            pen.begin_fill()
+
+            for _ in range(4):
+                pen.forward(square.size)
+                pen.left(90)
+
+            pen.end_fill()
+
+        # Close the Turtle graphics window on click
+        turtle.exitonclick()

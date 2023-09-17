@@ -112,21 +112,16 @@ class Rectangle(Base):
             f"{self.x}/{self.y} - {self.width}/{self.height}"
         )
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
-        Assign arguments to attributes in the specified order.
-
+        Assign arguments to attributes, allowing for both args and kwargs
         Args:
-            *args: Arguments to assign to attributes in order:
-                1st argument: id attribute
-                2nd argument: width attribute
-                3rd argument: height attribute
-                4th argument: x attribute
-                5th argument: y attribute
-
+        *args: Positional arguments (can be empty)
+        **kwargs: Keyword arguments as key-value pairs
         Returns:
-            None
+        None
         """
+
         if args:
             if len(args) >= 1:
                 self.id = args[0]
@@ -138,3 +133,6 @@ class Rectangle(Base):
                 self.x = args[3]
             if len(args) >= 5:
                 self.y = args[4]
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)

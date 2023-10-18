@@ -1,10 +1,8 @@
-# 00x0E-SQL_more_queri
+# 00x0E-SQL_more_queries
 
-<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/bc2575fee3303b731031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231018%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231018T205558Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9363e18fb0ddd3f2da51e9acef47f538cbbaef397d07c0c16e8ddeae5f588b70" alt="alx SQL" />
+<img src="https://magoe.fr/blog/images/blog_48.png" alt="alx SQL" />
 
 ## Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
 ### General
 - How to create a new MySQL user
 - How to manage privileges for a user to a database or table

@@ -5,4 +5,4 @@ class Rectangle {
 }
 
 module.exports = Rectangle;
-//export default Rectangle;
+// export default Rectangle;

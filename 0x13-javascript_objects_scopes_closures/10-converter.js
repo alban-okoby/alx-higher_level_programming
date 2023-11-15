@@ -1,8 +1,10 @@
 #!/usr/bin/node
 
+/**
+ * function that converts a number from base 10 to another base passed as argument
+ */
 exports.converter = function (base) {
   return function (num) {
-	    const convertedNumber = this.toString(base);
-	  return converterNumber;
+    return num.toString(base);
   };
 };

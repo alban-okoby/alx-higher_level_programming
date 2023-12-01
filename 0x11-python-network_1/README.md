@@ -100,7 +100,7 @@ Write a Python script that takes your GitHub credentials (username and password)
 - You are not allowed to import packages other than requests and sys
 - You don’t need to check arguments passed to the script (number or type
 
-[10. Time for an interview!](10. Time for an interview!)
+[10. Time for an interview!](https://github.com/alban-okoby/alx-higher_level_programming/blob/master/0x11-python-network_1/100-github_commits.py)
 Write a Python script that takes 2 arguments in order to solve this challenge.
 
 - The first argument will be the repository name

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module fetches https://alx-intranet.hbtn.io/status and displays the body of the response.
+This module fetches https://alx-intranet.hbtn.io/status and
+displays the body of the response
 """
 
 import urllib.request

@@ -1,30 +1,23 @@
 #!/usr/bin/node
+
 const request = require('request');
 
-const apiUrl = process.argv[2];
+const url = process.argv[2];
 
-request.get(apiUrl, (error, response, body) => {
-  if (error) {
-    console.error(`Error occurred: ${error.message}`);
-  } else if (response.statusCode !== 200) {
-    console.error(`Failed to fetch data. Status code: ${response.statusCode}`);
-  } else {
-    const todosData = JSON.parse(body);
+request(url, (err, response, body) => {
+  if (err) {
+    console.error(err);
+  } else if (response.statusCode === 200) {
+    const completed = {};
+    const tasks = JSON.parse(body);
 
-    // Create a map to store the count of completed tasks for each user
-    const completedTasksByUser = new Map();
-
-    // Iterate through the todos and count completed tasks for each user
-    todosData.forEach(todo => {
-      if (todo.completed) {
-        const userId = todo.userId;
-        completedTasksByUser.set(userId, (completedTasksByUser.get(userId) || 0) + 1);
+    for (const task of tasks) {
+      if (task.completed === true) {
+        completed[task.userId] = (completed[task.userId] || 0) + 1;
       }
-    });
-
-    // Print users with completed tasks
-    completedTasksByUser.forEach((completedTasks, userId) => {
-      console.log(`${userId}: ${completedTasks}`);
-    });
+    }
+    console.log(completed);
+  } else {
+    console.error(`An error occurred. Status code: ${response.statusCode}`);
   }
 });

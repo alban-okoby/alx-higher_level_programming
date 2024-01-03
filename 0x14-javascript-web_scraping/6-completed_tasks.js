@@ -10,7 +10,7 @@ request.get(apiUrl, (error, response, body) => {
     console.error(`Failed to fetch data. Status code: ${response.statusCode}`);
   } else {
     const todosData = JSON.parse(body);
-    
+
     // Create a map to store the count of completed tasks for each user
     const completedTasksByUser = new Map();
 
